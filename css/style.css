@@ -1,1 +1,23 @@
-﻿
+.feedback__file {
+	display: none;
+}
+.feedback__text{
+	position: relative;
+	display: inline-block;
+	background: pink;
+	padding: 10px 30px;
+	margin: 30px 30px 30px 0px;
+	border: 2px solid #000;
+	border-radius: 5px;
+	transition-duration: 1s;
+	transition-delay: 0.1s;
+}
+
+.feedback__text:active{
+	top: 2px;
+	left: 0px;
+}
+
+.feedback__text:hover{
+	background: #159;
+}
