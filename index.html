@@ -3,12 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Document</title>
 </head>
 <body>
+	<h1>I didn't style all elements, sorry!</h1>
 <form action="#" method="post" enctype="multipart/font data">
 	<div>
-		Name
+		Names
 	</div>
 	<input type="text" placeholder="Username" name="Name1" id="">
 	<div>
@@ -18,8 +20,7 @@
 	<div>
 		Tel.
 	</div>
-	<input type="tel" value="+372" name="Phone1"disabled id="">
-	
+	<input type="tel" value="+358" name="Phone1"disabled id="">
 	<br>
 	<h3>
 		Kvass
@@ -37,15 +38,13 @@
 		<input type="radio" name="kali1" value="kodune" disabled>
 		Kodune
 	</div>
-	<h3>
-		Kvass2
-	</h3>
+	<h3>Kvass2</h3>
 	<div>
 		<input type="radio" name="Kali2" value="kodune" id="">
 		Homemade
 	</div>
 	<div>
-		<input type="radio" name="Kali2" value="midle" checked=" id=">
+		<input type="radio" name="Kali2" value="midle" checked" id=">
 		Midle
 	</div>
 	<br>
@@ -63,11 +62,14 @@
 	<input type="checkbox" name="cheese balls" value="yes" checked="" id="">
 	Chease balls
 </div>
-<br>
-<div>
-	<input type="file" name="photo" id="">
-	Choose file
-</div>
+
+
+	<label for="file" class="feedback__label">
+		<span class="feedback__text">Add file</span>
+		<input type="file" id="file" class="feedback__file">
+	</label>
+
+
 <br>
 <hr>
 <hr>
@@ -99,13 +101,12 @@
 	<textarea name="text" id="" cols="10" rows="10"></textarea>
 	<div>
 		<button type="submit">Sent</button>
-
 	</div>
 	<br>
 	<div>
-		<button type="reset">Reset
-		</button>
+		<button type="reset">Reset</button>
 	</div>
+
 </form>
 
 </body>
